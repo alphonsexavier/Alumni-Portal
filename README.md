@@ -46,13 +46,7 @@ When developing code for this project, we should implement some standard practic
 + Migration errors
     * I've noticed an issue when I make changes to models and then makemigrations and migrate, and then try to do something that utilizes these new changes. I might be hit with a ProgrammingError or an UndefinedTable error. Usually these errors mean that migrations weren't applied. If migrations were applied and you still get these errors, go into Docker and delete everything in Containers, Images, and Volumes (all are tabs on the left side of the window). Then re-run the build command. I think these errors occur because it didn't refresh the database, and clearing everything else will force it to rebuild from scratch.
 
-## NEXT STEPS ##
-* We need to prepare Django settings for production environment.
-* Need to finish up documentation for what we have so far.
-* There's also a backlog of ticket items we weren't able to complete during this course.
 
 ## Who do I talk to? ##
 
-* **Repo owner and admin:** Ivy Palmer ipalmer@clarku.edu
 * **Product Owner:** Betty Jean Jaskoviak bjjasko@gmail.com
-You can also refer to our [Confluence](https://clarku.atlassian.net/wiki/home) for more info about the team and our processes
